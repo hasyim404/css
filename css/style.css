@@ -1,0 +1,77 @@
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-image: url("https://wallpaperset.com/w/full/2/1/b/462780.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr {
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+legend {
+    margin: auto;
+}
+
+legend h1 {
+    font-size: 45px;
+    color: green;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+fieldset p {
+    text-align: justify;
+    text-indent: 5%;
+    font-size: 17px;
+    color: black;
+}
+
+ol {
+    list-style-type: upper-alpha;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: circle;
+    font-size: 18px;
+}
+
+marquee {
+    background-color: green;
+    direction: left;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+fieldset h3 {
+    font-size: 45px;
+    text-decoration: underline;
+    font-style: italic;
+    color: green;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+fieldset img {
+    margin-top: -80px;
+    width: 20%;
+    float: right;
+    margin-right: 30px;
+    border-radius: 10px;
+
+}
+
+ul li img {
+    width: 20px;
+    float: left;
+    margin: auto;
+}
