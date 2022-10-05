@@ -1,77 +1,140 @@
+* {
+    /* universal */
+    box-sizing: border-box;
+}
+
 body {
-    margin-left: 15%;
-    margin-right: 15%;
-    background-image: url("https://wallpaperset.com/w/full/2/1/b/462780.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #1B2430;
+}
+
+.header {
+    background-image: url('../img/banner-saitama.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 50px;
+    text-align: center;
 }
 
-hr {
-    border: 1px solid;
-    border-radius: 20px;
+.header h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-legend {
-    margin: auto;
-}
-
-legend h1 {
-    font-size: 45px;
-    color: green;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    text-decoration: underline;
-    font-style: italic;
-}
-
-fieldset p {
-    text-align: justify;
-    text-indent: 5%;
-    font-size: 17px;
-    color: black;
-}
-
-ol {
-    list-style-type: upper-alpha;
-    font-size: 18px;
-}
-
-ul {
-    list-style-type: circle;
-    font-size: 18px;
-}
-
-marquee {
-    background-color: green;
-    direction: left;
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-}
-
-fieldset h3 {
-    font-size: 45px;
-    text-decoration: underline;
-    font-style: italic;
-    color: green;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    margin-top: 5px;
-    margin-left: 20px;
-}
-
-fieldset img {
-    margin-top: -80px;
-    width: 20%;
-    float: right;
-    margin-right: 30px;
-    border-radius: 10px;
+.navbar {
+    overflow: hidden;
+    background-color: #30475e;
+    text-align: center;
+    z-index: 6;
 
 }
 
-ul li img {
-    width: 20px;
+.navbar a {
+    display: inline-block;
+    margin-right: -4px;
+    background-color: #30475e;
+    color: #fff;
+    padding: 22px 22px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 15px;
+    z-index: 9;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #4B5D67;
+}
+
+.column {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: left;
-    margin: auto;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+    background-color: #2456882d;
+    color: #fff;
+}
+
+.column.side .button {
+    background-color: #4B5D67;
+    border: none;
+    color: white;
+    padding: 15px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.column.side .button:hover {
+    background-color: rgb(87, 110, 192);
+}
+
+.column.side a {
+    color: #ffffff;
+}
+
+.column.side a:hover {
+    color: rgb(87, 110, 192);
+}
+
+.column.middle {
+    width: 50%;
+}
+
+.column.middle p {
+    color: #fff;
+}
+
+.column.middle img {
+    float: right;
+    width: 200px;
+    background-color: green;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.column.middle h1 {
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.row {
+    padding: 30px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #30475e;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+
+    .column.side {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+
 }
